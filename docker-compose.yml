@@ -1,10 +1,8 @@
-version: '2'
+version: '3'
 
 services:
   app:
-    build: .
-    working_dir: /app
-    command: python server.py
+    image: netsugo/blockdiag-api
     ports:
-      - 8001:8000
+      - 8000:8000
     restart: always
